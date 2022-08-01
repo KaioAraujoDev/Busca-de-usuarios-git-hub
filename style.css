@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color:rgba(20,28,47,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+main{
+    height: 80%;
+    width: 45%;
+    background-color: white;
+    
+
+}
+
+/*Header estilos*/
+.header {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(20,28,47,255) ;
+    color: white;
+}
+.header .title{
+    font-size: 1.2em;
+    letter-spacing: 0.15ch;
+}
+
+.buttonTheme{
+    background:none;
+    border: none;
+    color: white;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.buttonTheme .labelButton{
+    font-size: 0.8em;
+}
+.iconTheme{
+    width: 1.25em;
+}

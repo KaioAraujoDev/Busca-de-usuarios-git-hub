@@ -12,8 +12,6 @@ function BuscarDados(usuario){
 
 }
 
-BuscarDados('Garchy');
-
 
 function Exibirdados(res){
     const boxResult = document.querySelector('#result');
