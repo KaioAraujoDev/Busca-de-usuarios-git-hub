@@ -16,9 +16,6 @@ body{
 main{
     height: 80%;
     width: 45%;
-    background-color: white;
-    
-
 }
 
 /*Header estilos*/
@@ -66,6 +63,7 @@ main{
     align-items: center;
     padding: 1em;
     border-radius: 0.5em;
+    margin-bottom: 1em;
 }
 .iconSearch{
     width:1.3em;
@@ -77,6 +75,7 @@ main{
     background: none;
     border: none;
     outline: none;
+    color: white;
 }
 .inputSearch::placeholder{
     color:#94a1b7;
@@ -89,4 +88,20 @@ main{
     padding: 0.8em 1.15em;
     border-radius: 0.25em;
     vertical-align: center;
+}
+
+.boxResult{
+    background:rgba(30,43,72,255);
+    height: 65%;
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divLoading{
+    width:50%;
+}
+.loading{
+    width: 50%;
 }

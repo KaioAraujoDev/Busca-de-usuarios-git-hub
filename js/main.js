@@ -5,8 +5,35 @@ buttonSearch.addEventListener('click', () =>{
     const searchInput = document.querySelector('#search');
 
     if(searchInput.value !== ''){
-        BuscarDados(searchInput.value)
+        buscarDados(searchInput.value)
     }else{
         alert('Preencha o campo busca');
     }
 })
+
+
+function exibirLoading(){
+    const result = document.querySelector('#result');
+    const loading = document.createElement('div');
+    loading.id = 'loading';
+    
+    loading.classList.add('divLoading');
+
+
+    loading.innerHTML = `<img src="./assets/Rolling-1s-200px.svg" alt="Loading"  class="loading"/>`;
+    
+    result.appendChild(loading);
+
+}
+
+function exibirErro(){
+    const result = document.querySelector('#result');
+    result.removeChild(loading);
+    const erro = document.createElement('div');
+    erro.id = 'erro';
+
+
+    erro.innerHTML=`<p>Usuário não encontrado</p>`;
+
+    result.appendChild(erro);
+}
