@@ -25,13 +25,71 @@ function buscarDados(usuario){
 
 function exibirDados(res){
     const boxResult = document.querySelector('#result');
-    boxResult.removeChild(loading);
-
     
     boxResult.innerHTML = '';
-    boxResult.innerHTML += `<p>Nome : ${res.name}</p>`
-    boxResult.innerHTML += `<p>Nome : ${res.bio}</p>`
-    boxResult.innerHTML += `<img src="${res.avatar_url}"/>`
+    console.log(res)
+    boxResult.innerHTML += `<div class="divImg"><img class="imgAvatar" src="${res.avatar_url}"</div>`
+    boxResult.innerHTML += `
+    <div class="content">
+        <div class="divTitle">
+            <h1>${res.name}</h1>
+            <h2>${res.login}</h2>
+        </div>
+        <span>${res.created_at}</span>
+
+        <h3>${res.bio}</h3>
+    
+        <div class="divInfo">
+            <div>
+                <h4>
+                    Repos
+                </h4>
+                <p>
+                    ${res.public_repos}                
+                </p>
+            <div>
+                <h4>
+                    Followers
+                </h4>
+                <p>
+                    ${res.followers}                
+                </p>
+            <div>
+            <div>
+                <h4>
+                    Following
+                </h4>
+                <p>
+                    ${res.following}                
+                </p>
+            <div>
+        </div>
+
+        <div>
+            <div>
+                <img>
+                <p></p>
+            </div>
+
+            <div>
+                <img>
+                <p></p>
+            </div>
+
+            <div>
+                <img>
+                <p></p>
+            </div>
+
+            <div>
+                <img>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+    `;
+
 }
 
 

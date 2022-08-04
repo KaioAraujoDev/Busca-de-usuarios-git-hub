@@ -14,6 +14,8 @@ buttonSearch.addEventListener('click', () =>{
 
 function exibirLoading(){
     const result = document.querySelector('#result');
+    result.innerHTML = '';
+
     const loading = document.createElement('div');
     loading.id = 'loading';
     
@@ -27,13 +29,15 @@ function exibirLoading(){
 }
 
 function exibirErro(){
+    
     const result = document.querySelector('#result');
-    result.removeChild(loading);
+    result.innerHTML = '';
+
     const erro = document.createElement('div');
     erro.id = 'erro';
 
 
-    erro.innerHTML=`<p>Usuário não encontrado</p>`;
+    erro.innerHTML=`<p class="textError">Usuário não encontrado</p>`;
 
     result.appendChild(erro);
 }

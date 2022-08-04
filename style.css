@@ -101,7 +101,25 @@ main{
 
 .divLoading{
     width:50%;
+    display: flex;
+    justify-content: center;
 }
 .loading{
-    width: 50%;
+    width: 35%;
+}
+.textError{
+    color:white;
+}
+
+/*Resultado de busca*/
+
+.divImg{
+    width:35%;
+}
+.content{
+    width: 80%;
+    height: 100%;
+}
+.imgAvatar{
+    width: 10% ;
 }
