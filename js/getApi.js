@@ -47,6 +47,7 @@ function exibirDados(res){
                 <p>
                     ${res.public_repos}                
                 </p>
+            </div>
             <div>
                 <h4>
                     Followers
@@ -54,7 +55,7 @@ function exibirDados(res){
                 <p>
                     ${res.followers}                
                 </p>
-            <div>
+            </div>
             <div>
                 <h4>
                     Following
@@ -62,28 +63,28 @@ function exibirDados(res){
                 <p>
                     ${res.following}                
                 </p>
-            <div>
+            </div>
         </div>
 
-        <div>
+        <div class="divLinks">
             <div>
-                <img>
-                <p></p>
+                <img class="iconInfo"src="assets/location-pin.png" alt="Localização">
+                <p>${res.location}</p>
             </div>
 
             <div>
-                <img>
-                <p></p>
+                <img class="iconInfo" src="assets/twitter.png">
+                <p>${res.twitter_username ? res.twitter_username : 'Não possui' }</p>
             </div>
 
             <div>
-                <img>
-                <p></p>
+                <img class="iconInfo" src="assets/link.png">
+                <p>${res.blog ? res.blog : 'Não possui'}</p>
             </div>
 
             <div>
-                <img>
-                <p></p>
+                <img class="iconInfo" src="assets/organization.png">
+                <p>${res.organizations_url}</p>
             </div>
 
         </div>

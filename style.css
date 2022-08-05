@@ -105,7 +105,7 @@ main{
     justify-content: center;
 }
 .loading{
-    width: 35%;
+    width: 20%;
 }
 .textError{
     color:white;
@@ -116,10 +116,82 @@ main{
 .divImg{
     width:35%;
 }
-.content{
-    width: 80%;
-    height: 100%;
-}
+
 .imgAvatar{
     width: 10% ;
 }
+
+/*Bloco de informações*/
+
+.content{
+    width: 80%;
+    height: 100%;
+    padding:1em;
+    position: relative;
+    box-sizing: border-box;
+}
+.divTitle{
+    margin: 2.5em 0 1em 0;
+}
+.divTitle h1{
+    font-size: 1.35em;
+    color: #eff2f5;
+    font-weight: 600;
+    margin-bottom: 0.25em;
+}
+.divTitle h2{
+    font-size: 1em;
+    color:rgba(39,80,135,255);
+}
+
+.content span {
+    position: absolute;
+    top: 14%;
+    right: 5%;
+    color:#7d879e;
+}
+.content h3 {
+    color:#7d879e;
+    margin-bottom: 2em;
+}
+
+.divInfo{
+    display: flex;
+    justify-content:space-around;
+    padding:1em;
+    border-radius: 0.5em;
+    background: rgba(21,29,47,255);
+    margin-bottom: 2em;
+}
+.divInfo div h4{ 
+    color:#858c9b;
+    margin-bottom: 0.5em;
+    font-size: 0.85em;
+}
+.divInfo div p{ 
+    color:#d2d6dc;
+    font-size: 1.15em;
+    font-weight: 600;
+}
+
+.divLinks{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.divLinks div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+.divLinks div p{
+    display: inline-block;
+    word-wrap: break-word;
+    height: 50%;
+}
+.iconInfo{
+    width:12.25%;
+}
+
