@@ -41,12 +41,12 @@ function exibirDados(res){
            "Entrou em " + dataFormatada
         }</span>
 
-        <h3>${res.bio}</h3>
+        <h3>${res.bio ? res.bio : 'Não possui'}</h3>
     
         <div class="divInfo">
             <div>
                 <h4>
-                    Repos
+                    Repositórios
                 </h4>
                 <p>
                     ${res.public_repos}                
@@ -54,7 +54,7 @@ function exibirDados(res){
             </div>
             <div>
                 <h4>
-                    Followers
+                    Seguidores
                 </h4>
                 <p>
                     ${res.followers}                
@@ -62,7 +62,7 @@ function exibirDados(res){
             </div>
             <div>
                 <h4>
-                    Following
+                    Seguindo
                 </h4>
                 <p>
                     ${res.following}                
@@ -73,7 +73,7 @@ function exibirDados(res){
         <div class="divLinks">
             <div>
                 <img class="iconInfo"src="assets/location-pin.png" alt="Localização">
-                <p>${res.location}</p>
+                <p>${res.location ? res.location : 'Não possui'}</p>
             </div>
 
             <div>
@@ -88,7 +88,7 @@ function exibirDados(res){
 
             <div>
                 <img class="iconInfo" src="assets/organization.png">
-                <p>${res.organizations_url}</p>
+                <p>${res.organizations_url ? res.organizations_url : 'Não possui'}</p>
             </div>
 
         </div>

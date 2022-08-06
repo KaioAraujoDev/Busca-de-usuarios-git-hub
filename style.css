@@ -88,6 +88,11 @@ main{
     padding: 0.8em 1.15em;
     border-radius: 0.25em;
     vertical-align: center;
+    transition: background-color .5s;
+}
+.buttonSearch:hover{
+    cursor: pointer;
+    background-color: #1e4b8a;
 }
 
 .boxResult{
