@@ -76,16 +76,19 @@ main{
     border: none;
     outline: none;
     color: white;
+    font-size: 1em;
 }
 .inputSearch::placeholder{
     color:#94a1b7;
     letter-spacing: 0.2ch;
 }
+
 .buttonSearch{
     background:#0a79e9 ;
     border: none;
     color:#bfefff;
     padding: 0.8em 1.15em;
+    font-size: 1em;
     border-radius: 0.25em;
     vertical-align: center;
     transition: background-color .5s;
@@ -127,6 +130,7 @@ main{
 .imgAvatar{
     width: 65%;
     border-radius: 50%;
+    border: .2em solid white;
     position: absolute;
     left:25%;
     top:7%;
@@ -145,14 +149,21 @@ main{
     margin: 2.5em 0 1em 0;
 }
 .divTitle h1{
-    font-size: 1.35em;
+    font-size: 1.5em;
     color: #eff2f5;
     font-weight: 600;
     margin-bottom: 0.25em;
+    letter-spacing: 0.1ch;
 }
-.divTitle h2{
+
+.divTitle h2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.divTitle h2 a{
     font-size: 1em;
-    color:rgba(39,80,135,255);
+    color:#1f4e8a;
+    text-decoration: none;
 }
 
 .content span {
@@ -164,6 +175,8 @@ main{
 .content h3 {
     color:#7d879e;
     margin-bottom: 2em;
+    line-height: 1.35em;
+
 }
 
 .divInfo{
@@ -189,23 +202,31 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 20%;
+    height: 23.5%;
 }
 .divLinks div{
     width: 50%;
     display: flex;
     align-items: center;
     box-sizing: border-box;
+
 }
-.divLinks div p{
-    width: 80%;
-    word-wrap:break-word;
+.divLinks div a , .divLinks div p{
+    width: 75%;
+    word-wrap: break-word;
     font-size: 0.85em;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 1.25em;
     color: #858c9b;
+    text-decoration: none;
+}
+
+.divLinks div a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .iconInfo{
     width:12.25%;
-    margin-right: 0.5em;
+    margin-right: 0.75em;
 }
 

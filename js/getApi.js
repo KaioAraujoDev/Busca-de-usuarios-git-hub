@@ -35,7 +35,7 @@ function exibirDados(res){
     <div class="content">
         <div class="divTitle">
             <h1>${res.name}</h1>
-            <h2>${res.login}</h2>
+            <h2><a href="${res.html_url}" target="_blank">${res.login}</a></h2>
         </div>
         <span>${ 
            "Entrou em " + dataFormatada
@@ -73,22 +73,38 @@ function exibirDados(res){
         <div class="divLinks">
             <div>
                 <img class="iconInfo"src="assets/location-pin.png" alt="Localização">
-                <p>${res.location ? res.location : 'Não possui'}</p>
+                ${
+                res.location ?
+                `<a href="https://www.google.es/maps/place/${res.location}" target="_blank">${res.location}</a>` : 
+                '<span>Não possui</span>'
+                }
             </div>
 
             <div>
                 <img class="iconInfo" src="assets/twitter.png">
-                <p>${res.twitter_username ? res.twitter_username : 'Não possui' }</p>
+                ${
+                    res.twitter_username ?
+                    `<a href="https://twitter.com/${res.twitter_username}" target="_blank">${res.twitter_username}</a>` : 
+                    '<p>Não possui</p>'
+                }
             </div>
 
             <div>
                 <img class="iconInfo" src="assets/link.png">
-                <p>${res.blog ? res.blog : 'Não possui'}</p>
+                ${
+                    res.blog ?
+                    `<a href="${res.blog}" target="_blank">${res.blog}</a>` : 
+                    '<p>Não possui</p>'
+                }
             </div>
 
             <div>
                 <img class="iconInfo" src="assets/organization.png">
-                <p>${res.organizations_url ? res.organizations_url : 'Não possui'}</p>
+                ${
+                    res.companies ?
+                    `<a href="${res.companies}" target="_blank">${res.companies}</a>` : 
+                    '<p>Não possui</p>'
+                }
             </div>
 
         </div>
