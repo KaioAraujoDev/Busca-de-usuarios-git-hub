@@ -1,5 +1,6 @@
 
 
+var dataFormatada = "";
 
 function buscarDados(usuario){
     
@@ -7,6 +8,7 @@ function buscarDados(usuario){
     .then(async (res)=>{
          const resultado = await res.json();
             if(res.ok === true){
+                dataFormatada = formatarData(resultado.created_at);
                 exibirDados(resultado);
             }else{
                 exibirErro();
@@ -35,7 +37,9 @@ function exibirDados(res){
             <h1>${res.name}</h1>
             <h2>${res.login}</h2>
         </div>
-        <span>${res.created_at}</span>
+        <span>${ 
+           "Entrou em " + dataFormatada
+        }</span>
 
         <h3>${res.bio}</h3>
     

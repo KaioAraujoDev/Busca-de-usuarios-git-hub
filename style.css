@@ -114,11 +114,17 @@ main{
 /*Resultado de busca*/
 
 .divImg{
-    width:35%;
+    width:30%;
+    height: 100%;
+    position: relative;
 }
 
 .imgAvatar{
-    width: 10% ;
+    width: 65%;
+    border-radius: 50%;
+    position: absolute;
+    left:25%;
+    top:7%;
 }
 
 /*Bloco de informações*/
@@ -178,20 +184,23 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 20%;
 }
 .divLinks div{
     width: 50%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 50%;
+    box-sizing: border-box;
 }
 .divLinks div p{
-    display: inline-block;
-    word-wrap: break-word;
-    height: 50%;
+    width: 80%;
+    word-wrap:break-word;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: #858c9b;
 }
 .iconInfo{
     width:12.25%;
+    margin-right: 0.5em;
 }
 

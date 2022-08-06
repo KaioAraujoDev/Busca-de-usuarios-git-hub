@@ -41,3 +41,11 @@ function exibirErro(){
 
     result.appendChild(erro);
 }
+
+function formatarData(data){
+    const meses = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul","Ago","Set","Out","Nov","Dez"];
+
+    let dataFormatada = new Date(data);
+    dataFormatada = (dataFormatada.getDate()) + " " + meses[(dataFormatada.getMonth())] + " " + (dataFormatada.getFullYear());
+    return dataFormatada;
+}
